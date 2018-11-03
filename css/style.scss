@@ -42,11 +42,6 @@ header{
     justify-content: center;
 }
 
-pre{
-    background-color: #193549;
-    font-family: 'PT Mono', monospace;
-}
-
 em{
     font-family: 'Abril Fatface', cursive;
     font-style: normal;
@@ -55,7 +50,16 @@ em{
 
 .mainBody{
     background-color: whitesmoke;
+    color:$black;
 }
+
+.brwrInfo{
+    width: 78ch;
+    margin: 0 auto;
+    position: relative;
+    bottom:12vh;
+}
+
 .logo{
     font-size: 3rem;
 
@@ -75,9 +79,9 @@ em{
     color:$black;
     outline: 3px solid $black;
     outline-offset: -13px;
-    position: relative;
-    bottom:10vh;
     display: flex;
+    position: relative;
+    bottom:12vh;
 
 
 }
@@ -102,7 +106,7 @@ em{
     justify-content: center;
 
     svg{
-        height: 80%;
+        height: 60%;
     }
 
     h2{
@@ -112,3 +116,16 @@ em{
 }
 
 @import "monokai";
+
+figure{
+    margin:0;
+    font-size: .85rem;
+}
+pre{
+    background-color: #193549;
+    color:whitesmoke;
+    font-family: 'PT Mono', monospace;
+    padding:15px 0;
+    line-height: .50rem;
+    border-radius: 5px;
+}
