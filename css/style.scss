@@ -20,9 +20,9 @@ $purple: #67597a;
 
 body{
     margin: 0;
-    background-color:$black;
-    color:whitesmoke;
-    font-family: 'PT Sans Narrow', sans-serif;
+    background-color:white;
+    color:black;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     @media screen and (max-width: 670px) {
         font-size: 16px;
@@ -34,15 +34,19 @@ h1, h2, h3{
     font-weight: 400;
 }
 
-header{
-    color:whitesmoke;
-    background-color: $black;
-    height: 55vh;
-}
 .header{
+    color:$black;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+svg{
+    height: 8rem;
+    display:inline-block;
 }
 
 em{
@@ -51,19 +55,9 @@ em{
     font-size: 1.3rem;
 }
 
-.mainBody{
-    background-color: whitesmoke;
-    color:$black;
-    @media screen and (max-width: 670px) {
-        padding: 15px;
-     }
-}
-
 .brwrInfo{
     width: 78ch;
     margin: 0 auto;
-    position: relative;
-    bottom:12vh;
 
     @media screen and (max-width: 670px) {
         width: 100%;
@@ -71,62 +65,18 @@ em{
 }
 
 .logo{
+    text-align: center;
     font-size: 3rem;
+    margin:0;
 
     span{
         text-align:center;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         display: block;
-        font-family: 'PT Sans Narrow', sans-serif;
+        font-family: 'Roboto', sans-serif;
     }
 }
 
-.coffeLabel{
-    width: 60%;
-    margin: 0 auto;
-    border: 5px solid whitesmoke;
-    padding:0px;
-    color:$black;
-    outline: 3px solid $black;
-    outline-offset: -13px;
-    display: flex;
-    position: relative;
-    bottom:12vh;
-    @media screen and (max-width: 670px) {
-        width: 100%;
-     }
-
-
-}
-
-.labelCard{
-    background-color: $green;
-    padding:15px;
-    flex-grow:3;
-
-    h2{
-        margin-top:0;
-    }
-}
-
-.labelBranding{
-    padding:15px;
-    flex-grow:1;
-    background-color: #C4C4C4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    svg{
-        height: 60%;
-    }
-
-    h2{
-        margin:0;
-        color:$black;
-    }
-}
 
 @import "monokai";
 
@@ -137,7 +87,7 @@ figure{
 pre{
     background-color: #193549;
     color:whitesmoke;
-    font-family: 'PT Mono', monospace;
+    font-family: 'Roboto Slab', serif;
     padding:15px 0;
     line-height: .50rem;
     border-radius: 5px;
@@ -148,3 +98,12 @@ pre{
     width: 100%;
     padding:15px;
 }
+
+a, a:hover, a:visited, a:active{
+    color:$green;
+}
+
+li{
+    padding:.50rem;
+}
+

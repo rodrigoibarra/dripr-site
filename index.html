@@ -4,38 +4,73 @@ layout: landing-page
 
 <header>
     <div class="header">
-        <h1 class="logo">.BRWR <span>Est.09</span></h1>
+        <div class="icon">
+            <svg viewBox="0 0 133 175">
+                <g id="chemex-2" transform="translate(-45.000000, -29.000000)" stroke="#272727" stroke-width="8">
+                <g id="chemex" transform="translate(49.000000, 33.000000)">
+                <path d="M78.9892224,76.9393986 C79.1506096,82.6225556 120.853717,133.013892 120.853717,133.013892 C122.92797,135.345948 124.04648,144.696732 124.04648,147.271592 C124.04648,157.489301 115.145002,161.178151 90.0896226,164.876666 C81.8907069,166.086938 43.9866513,167.108252 33.5487433,164.876666 C13.4437535,160.578294 0,156.198353 0,147.271592 C0,144.117307 1.67855106,134.233447 4.73641852,131.463016 C4.73641852,131.463016 44.4010462,85.5675073 44.4010462,77.1736807 C44.4010462,68.7798541 19.0574202,16.0352369 19.0574202,11.7906531 C19.0574202,5.43730111 39.588776,-1.94964046e-14 61.6767416,0 C83.7647073,0 103.949565,5.09387668 103.949565,11.7906531 C103.949565,16.2454761 78.8278352,71.2562415 78.9892224,76.9393986 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                <path d="M98.6149147,106.364769 C88.4526035,93.3815416 78.5331422,80.024438 78.4545925,77.2583558 C78.3824704,74.7186195 83.3596175,62.3277096 88.8875189,49 L37.4040323,58.0198762 C41.104421,67.1171995 43.8664163,74.7216344 43.8664163,77.4926379 C43.8664163,83.3297455 24.6850828,107.302212 13,121.364451 L98.6149147,106.364769 L98.6149147,106.364769 Z" id="Combined-Shape" fill="#cc5a71"></path>
+                </g>
+                </g>
+            </svg>
+        </div>
+
+        <h1 class="logo">.Dripr <span>A mac brewing recipe.</span></h1>
     </div>
 
 </header>
 
 <section class="mainBody">
-    <div class="coffeLabel">
-        <div class="labelCard">
-                <h2>Dotfiles / México</h2>
-                <p>Fresh script to get your OS started</p>
-                <p><b>Altitude:</b> 7,382</p>
-               <p><b>Process:</b> Run on a new mac or update an old one</p>
-               <p><b>By:</b> Rodrigo Ibarra in México City</p>
-        </div>
-        <div class="labelBranding">
-           {% include chemex.html %}
-            <h2>.Brwr</h2>
-        </div>
-    </div>
-
     <div class="brwrInfo">
-        <h2>.Brwr?</h2>
-        <p>.Brwr is the recipe for my MacOS environment, what I mean by that is, I can take a new Mac computer, run brew.sh and it will install most of the stuff I need, like npm and git and node, along with a bunch of apps that I use daily. After the brew is done, It will link all my .dotfiles to the new instances so I’ll have all my personal configuratións with minimal effort.</p>
+        <h2>What is .Dripr?</h2>
+        <p>.Dripr is the recipe for my MacOS environment, what I mean by that is, I can take a new Mac computer, run brew.sh and it will install most of the stuff I need, like npm and git and node, along with a bunch of apps that I use daily. After the brew is done, It will link all my .dotfiles to the new instances so I’ll have all my personal configuratións with minimal effort.</p>
 
         <p>I can run this process as many times as I want without risk, just like drinking coffee.</p>
 
         <h2>What's in it?</h2>
 
-        <p>Brew.sh is a three script task, and you can run each on its own:</p>
+        <p>Pour.sh is a three script task, and you can run each on its own:</p>
 
         <ul>
             <li>Ground.sh - Will check and install the entire environment, you can check the list of apps and frameworks it will install here.</li>
+
+            <details>
+                <summary>Apps & packages</summary>
+
+                <ul>
+                        <h2>Apps</h2>
+                        <li>google-chrome</li>
+                        <li>dropbox</li>
+                        <li>slack</li>
+                        <li>visual-studio-code</li>
+                        <li>sequel-pro</li>
+                        <li>appcleaner</li>
+                        <li>the-unarchiver</li>
+                        <li>Hyper</li>
+                        <li>sketch</li>
+                        <li>openemu</li>
+                        <li>firefox</li>
+
+                        <h2>Packages</h2>
+                    <li>Homebrew</li>
+                    <li>dockutil</li>
+                    <li>openssl</li>
+                    <li>git</li>
+                    <li>node</li>
+                    <li>ruby</li>
+                    <li>python3</li>
+                    <li>thefuck</li>
+                    <li>wget</li>
+                    <li>zsh</li>
+                    <li>zsh-completions</li>
+                    <li>unrar</li>
+                    <li>wifi-password</li>
+                    <li>bundler</li>
+                    <li>jekyll</li>
+                    <li>Grunt</li>
+                </ul>
+
+            </details>
 
             <li>Pour.sh - Will run a bunch of scripts that will reset and change some defaults on your MacOS to make it a bit better ( this is pretty much a slightly altered version of what Mathias Bynens did, this is basically the standard).</li>
 
@@ -63,5 +98,5 @@ layout: landing-page
 </section>
 
 <footer class="siteFooter">
-        <p class="footer-text">&copy; 2014 <script>new Date().getFullYear()>2010&&document.write("- "+new Date().getFullYear());</script> Rodrigo Ibarra. Hosted @ <a href="https://www.netlify.com/">Netlify</a>, the fonts are Abril Fatface|PT Mono|PT Sans Narrow by <a href="https://www.google.com/fonts">Google Fonts</a>.</p>
+        <p class="footer-text">&copy; 2014 <script>new Date().getFullYear()>2010&&document.write("- "+new Date().getFullYear());</script> by <a href="https://rodrigo-ibarra.com"> Rodrigo Ibarra.</a> Hosted @ <a href="https://www.netlify.com/">Netlify</a>, the fonts are:  Abril Fatface | Roboto Slab | Roboto served from <a href="https://www.google.com/fonts">Google Fonts</a>.</p>
 </footer>
