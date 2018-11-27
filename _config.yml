@@ -1,4 +1,4 @@
-title: BRWR
+title: DRIPR
 timezone: UTC
 collections:
   posts:
@@ -8,7 +8,7 @@ highlighter: rouge
 kramdown:
   input: GFM
   hard_wrap: false
-description: .BRWR is a dotfile collection by Rodrigo Ibarra
+description: .DRIPR is a dotfile collection by Rodrigo Ibarra
 permalink: pretty
 sass:
   sass_dir: _scss
